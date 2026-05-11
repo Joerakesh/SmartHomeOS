@@ -1,66 +1,131 @@
 # SmartHomeOS
 
-> Open-source smart home system built using ESP32, MQTT, Docker, and modern web technologies.
-
-## Overview
-
-SmartHomeOS is a smart home infrastructure project focused on:
-
-- ESP32-based relay control
-- MQTT communication
-- Web dashboard
-- Dockerized services
-- Home automation
-
-This repository will include both hardware and software required to build a complete smart home system.
+> Open-source smart home infrastructure platform built using ESP32, MQTT, Docker, and modern web technologies.
 
 ---
 
-## Planned Features
+# Overview
 
-- Smart switch control
-- Real-time device status
-- Room-based appliance management
+SmartHomeOS is an open-source smart home engineering project focused on building a complete self-hosted home automation ecosystem.
+
+The project combines:
+
+- embedded systems
+- IoT communication
+- smart relay control
+- automation architecture
+- hardware design
+- firmware development
+- self-hosted infrastructure
+
+The goal is to create a scalable smart home platform that includes both hardware and software components.
+
+---
+
+# Planned Features
+
+- ESP32-based smart switch control
+- Relay-based appliance management
 - MQTT communication
-- ESP32 firmware
+- Real-time device monitoring
 - Web dashboard
-- Docker deployment
+- Dockerized backend services
 - Sensor integration
-- Automation system
+- Automation engine
+- Mobile application
+- Energy monitoring
+- Self-hosted deployment
 
 ---
 
-## Project Structure
+# Repository Structure
 
 ```text
-firmware/   → ESP32 code
-backend/    → API server
-dashboard/  → Web dashboard
-hardware/   → Wiring and schematics
-docker/     → Docker setup
-docs/       → Documentation
+SmartHomeOS/
+│
+├── versions/
+│   ├── v1/
+│   ├── v2/
+│   └── v3/
+│
+├── README.md
+├── ROADMAP.md
+└── LICENSE
 ```
 
+Each version represents a standalone engineering stage of the SmartHomeOS project.
+
+This structure preserves:
+
+- firmware evolution
+- hardware evolution
+- architecture changes
+- simulation improvements
+
 ---
 
-## Status
+# Current Version
 
-🚧 Currently under development
+## V1 - ESP32 GPIO Simulation
 
-V1 Goal:
+V1 focuses on:
 
-- Control home appliances using ESP32 + relay module
+- ESP32 firmware setup
+- GPIO control
+- LED-based appliance simulation
+- Wokwi integration
+- PlatformIO workflow
+
+The LEDs simulate real home appliances before integrating physical relay modules.
 
 ---
 
-## ESP32 LED Simulation (V1)
+# V1 Simulation Preview
 
-Initial ESP32 GPIO simulation created using Wokwi.
+![ESP32 Simulation](versions/v1/assets/screenshots/esp32-led-simulation-v1.png)
 
-This simulation represents the first prototype of the SmartHomeOS relay control system.
+---
 
-![ESP32 Simulation](assets/screenshots/esp32-led-simulation-v1.png)
+# Technologies Used
 
-## License
+| Technology        | Purpose                   |
+| ----------------- | ------------------------- |
+| ESP32             | Main microcontroller      |
+| PlatformIO        | Embedded development      |
+| Wokwi             | Circuit simulation        |
+| Arduino Framework | Firmware framework        |
+| MQTT              | IoT communication         |
+| Docker            | Infrastructure deployment |
 
-MIT
+---
+
+# Development Roadmap
+
+| Version | Goal                        |
+| ------- | --------------------------- |
+| V1      | ESP32 GPIO simulation       |
+| V2      | Push button + relay control |
+| V3      | MQTT communication          |
+| V4      | Backend API                 |
+| V5      | Web dashboard               |
+| V6      | Automation engine           |
+| V7      | Sensor integration          |
+
+---
+
+# Status
+
+🚧 Currently under active development
+
+Current focus:
+
+- embedded firmware
+- simulation architecture
+- relay control system
+- smart appliance management
+
+---
+
+# License
+
+MIT License
