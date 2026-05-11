@@ -53,6 +53,14 @@ V1 Goal:
 
 ---
 
+## ESP32 LED Simulation (V1)
+
+Initial ESP32 GPIO simulation created using Wokwi.
+
+This simulation represents the first prototype of the SmartHomeOS relay control system.
+
+![ESP32 Simulation](assets/screenshots/esp32-led-simulation-v1.png)
+
 ## License
 
 MIT
